@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="94" viewBox="0 0 98 94">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.995" y1="0.225" x2="0.267" y2="1.133" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6418c3"/>
+      <stop offset="1" stop-color="#b74bdd"/>
+    </linearGradient>
+    <filter id="dot" x="39" y="0" width="59" height="59" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon" transform="translate(0 8)">
+    <g id="email_1" data-name="email 1" transform="translate(0 6)">
+      <path id="email_1_Background_Mask_" data-name="email 1 (Background/Mask)" d="M0,0H80V80H0Z" fill="none"/>
+      <path id="Vector" d="M50,60H16.667A16.687,16.687,0,0,1,0,43.333V18.949L31.737,36.259a3.33,3.33,0,0,0,3.193,0L66.667,18.949V43.333A16.687,16.687,0,0,1,50,60ZM33.333,29.536h0L.81,11.8A16.634,16.634,0,0,1,16.666,0H50A16.632,16.632,0,0,1,65.856,11.8L33.333,29.536Z" transform="translate(6.667 10)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="smallicon" transform="translate(51)">
+      <g transform="matrix(1, 0, 0, 1, -51, -8)" filter="url(#dot)">
+        <path id="dot-2" data-name="dot" d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" transform="translate(51 8)" fill="#5ecfff"/>
+      </g>
+      <path id="_" data-name="!" d="M4.464,16.128H.024V11.472h4.44v4.655Zm-.408-6.36H.456L0,0H4.536l-.48,9.767Z" transform="translate(15 9)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

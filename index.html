@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <a href="#"><img src="./img/logo.svg" class="logo-sidebar" alt=""></a>
+                <a href="#" id="sidebar-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="sidebar-menu">
+                <h4>MAIN MENU</h4>
+                <a href="#" class="active"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+
+                <a href="#" class=""><i class="far fa-envelope"></i><span>Campaigns</span></a>
+
+                <a href="#" class=""><i class="fas fa-chart-bar"></i><span>Reports</span></a>
+
+                <a href="#" class=""><i class="fas fa-comments"></i><span>Replies</span></a>
+
+                <a href="#" class=""><i class="fas fa-server"></i><span>Servers</span></a>
+
+                <a href="#" class=""><i class="fas fa-tachometer-alt"></i><span>Support</span></a>
+
+                <a href="#" class=""><i class="fas fa-cog"></i><span>Settings</span></a>
+
+
+            </div>
+        </div>
+
+        <!-- PAGE CONTENTS -->
+        <div class="contents-page">
+            <a href="#" id="collapse-btn"><i class="fas fa-bars"></i></a>
+            <div class="content-main-header">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Lorenzo Spangenberger
+                        <div class="dropdown-subtext">
+                            Super Admin
+                        </div>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-subpage">
+                <div class="row margins-paddings">
+                    <div class="col-lg-6">
+                        <h2 class="heading-subcontent">Dashboard</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="float-right btn-new-campaign"><img src="./img/messenger.svg" alt=""><span> New
+                                Campaigns</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="chart-cards">
+                            <div class="chart-div">
+                                <canvas id="pinkChart" width="100" height="100" class="chartjs-render-monitor"></canvas>
+                                <div class="chart-desc">
+                                    63%
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    5
+                                </div>
+                                <div class="chart-details">
+                                    Campaigns
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="chart-cards">
+                            <div class="chart-div">
+                                <canvas id="greenChart" width="100" height="100"
+                                    class="chartjs-render-monitor"></canvas>
+                                <div class="chart-desc chart-desc-2">
+                                    38%
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    10
+                                </div>
+                                <div class="chart-details">
+                                    Replies
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="chart-cards">
+                          <div class="chart-div">
+                              <img src="./img/inbox.svg" class="chart-sec" alt="">
+                          </div>
+                          <div>
+                            <div>
+                                1
+                            </div>
+                            <div class="chart-details">
+                                Server
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="chart-cards">
+                          <div class="chart-div">
+                              <img src="./img/barCharts.svg" class="chart-sec" alt="">
+                          </div>
+                          <div>
+                            <div>
+                                <div class="bullet"></div>
+                                2,841
+                            </div>
+                            <div class="chart-details chart-sub-details">
+                                Inboxed Emails
+                            </div>
+                            <div>
+                                <div class="bullet bullet-2"></div>
+                                1,456
+                            </div>
+                            <div class="chart-details chart-sub-details">
+                                Spam Emails
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <h2 class="heading-subcontent">Campaigns</h2>
+                    </div>
+                    <div class="col-lg-5 col-lg-custom">
+                        <div class="search-bar">
+                           <a href="#" class="search-btn-1"><img src="./img/search-icon.svg" alt=""></a>
+                        <input type="text" class="search-input-1" placeholder="Search here">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        
+                        <a href="#" class="float-right btn-new-campaign"><img src="./img/messenger.svg" alt=""><span> New
+                                Campaigns</span></a>
+                    </div>
+                </div>
+                <div class="table-section mt-5">
+                    <table class="table-custom">
+                        <colgroup>
+                            <col width="16.66%">
+                            <col width="22.66%">
+                            <col width="19.66%">
+                            <col width="19.66%">
+                            <col width="16.66%">
+                            <!-- <col width="15.66%"> -->
+                            <col width="2.66%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Campaign Name</th>
+                                <th>From Server</th>
+                                <th>Date Created</th>
+                                <th>Last Ran</th>
+                                <th>Reports</th>
+                                <th>...</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-report-rows">
+                                <td>Campaign 1</td>
+                                <td>
+                                    <img src="./img/email-box.svg" class="mailbox-1" alt="">
+                                    highspeed@mail.com
+                                </td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td><a href="#" class="report-btn-1">View Report</a></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <a type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            ...
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-report-rows">
+                                <td>Campaign 1</td>
+                                <td>
+                                    <img src="./img/email-box.svg" class="mailbox-1" alt="">
+                                    highspeed@mail.com
+                                </td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td><a href="#" class="report-btn-1">View Report</a></td>
+                            </tr>
+                            <tr class="table-report-rows">
+                                <td>Campaign 1</td>
+                                <td>
+                                    <img src="./img/email-box.svg" class="mailbox-1" alt="">
+                                    highspeed@mail.com
+                                </td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td><a href="#" class="report-btn-1">View Report</a></td>
+                            </tr>
+                            <tr class="table-report-rows">
+                                <td>Campaign 1</td>
+                                <td>
+                                    <img src="./img/email-box.svg" class="mailbox-1" alt="">
+                                    highspeed@mail.com
+                                </td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td><a href="#" class="report-btn-1">View Report</a></td>
+                            </tr>
+                            <tr class="table-report-rows">
+                                <td>Campaign 1</td>
+                                <td>
+                                    <img src="./img/email-box.svg" class="mailbox-1" alt="">
+                                    highspeed@mail.com
+                                </td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td>June 1, 2020, 08:22 AM</td>
+                                <td><a href="#" class="report-btn-1">View Report</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js""></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"> </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
